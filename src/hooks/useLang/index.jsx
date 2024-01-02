@@ -17,5 +17,5 @@ export default function useLang() {
     return value;
   }, [localLang]);
 
-  return typeof window !== "undefined" ? lang : null;
+  return lang;
 }
