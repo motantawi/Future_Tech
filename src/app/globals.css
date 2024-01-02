@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d4ed8;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* .animate-spin {
+  animation: spin 20s linear infinite;
+}
+
+.animate-spin_reverse {
+  animation: spin_reverse 20s linear infinite;
+}
+
+@keyframes spin_reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+} */
+
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background-color: #dbdbdbce;
+  position: relative;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 27.5px solid #dbdbdbce;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 27.5px solid #dbdbdbce;
+}
+
+.medium-hexagon {
+  width: 75px;
+  height: 41.25px;
+  background-color: #dbdbdbce;
+  position: relative;
+}
+
+.medium-hexagon:before,
+.medium-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 37.5px solid transparent;
+  border-right: 37.5px solid transparent;
+}
+
+.medium-hexagon:before {
+  bottom: 100%;
+  border-bottom: 20.625px solid #dbdbdbce;
+}
+
+.medium-hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 20.625px solid #dbdbdbce;
+}
